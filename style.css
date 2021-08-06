@@ -1,0 +1,83 @@
+:root{
+    --black: #000;
+    --white: #fff;
+    --orange: rgb(255, 148, 31);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.modal-content{
+    background-color: var(--black);
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+#artwork-wrapper{
+    height: 24rem;
+    overflow-y: scroll;
+}
+
+button[aria-label="Close"]{
+    color: var(--white);
+}
+
+.btn-secondary{
+    background-color: transparent;
+    border: 2px solid var(--orange);
+    color: var(--orange);
+}
+
+.btn-primary{
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    border: 2px solid var(--orange);
+}
+
+.artwork-item{
+    border: 1px solid var(--white);
+    margin: 10px 0px;
+}
+
+.artwork-item:hover{
+    cursor: pointer;
+}
+
+.artwork-item img{
+    width: 25%;
+    height: auto;
+}
+
+.title-and-button{
+    position: relative;
+    min-height: 130px;
+}
+
+.save-button{
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+
+select.form-select{
+    background: var(--black);
+    color: var(--orange);
+    border: 1px solid var(--orange);
+}
+
+select.form-select:active{
+    outline: none;
+}
+
+select.form-select option{
+    border-bottom: 1px solid var(--orange) !important;
+}
